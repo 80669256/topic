@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>一秒中有多长_author_LiangJingxian</title>
+		<meta name="author" content="www.tobie.cn Liangjingxian" />
+		<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+		<style type="text/css">
+			*{ margin: 0; padding: 0;}
+			html,body{ background: radial-gradient(#F6EFDF,#FFe99f); -webkit-user-select:   none;-moz-user-select:   none; width: 100%; height: 100%;}
+			h1,h2,p{ text-align: center;padding-top: 20px; width: 80%; margin: 0 auto;}
+			p{ border-radius: 8px; background: #8B572A;  margin-top: 20px; color: #F0F0F0; font-size: 26px;}
+			h1{  font-size: 36px; color: #767372; }
+			h1 span{ font-size: 42px; color: #FF575B;}
+			.yuan{ border-radius: 50%;}
+			.outer{ width: 160px; box-shadow: 0 0 20px #FF575B; transition: 80ms all ease;  position:relative;height: 160px; background: #EEEEEE; margin: 70px auto;}
+			.inner{ width: 120px; position: absolute; left: 20px; top: 20px; height: 120px; font-size: 40px;  line-height: 120px; color: #F0F0F0;  text-align: center; background: #EC383B;}
+			.outer:active{transform: scale(0.9); box-shadow: 0 0 50px #EC383B;}
+		</style>
+		<script src="js/zepto.min.js"></script>
+		<script type="text/javascript">
+		$(function() {
+			var num = 1;
+			var arr = ["你还差的很远", "差距只在呼吸间", "碉堡了,你是开挂了吧", "人中极品,你可以去瑞士了", "过了，过了", "亲，隐藏数字都被你按出来了"];
+			var timer = null;
+			$(".outer").on("touchstart", function() {
+				timer = setInterval(function() {
+					num++
+				}, 1)
+			});
+			var str = "";
+			var iEnd = 0;
+			$(".outer").on("touchend", function() {
+				clearInterval(timer);
+				iEnd = num + "" + Math.floor(Math.random() * 10);
+				if (iEnd < 800) {
+					str = arr[0]
+				} else if (iEnd > 800 && iEnd < 950) {
+					str = arr[1]
+				} else if (iEnd > 950 && iEnd < 999) {
+					str = arr[2]
+				} else if (iEnd > 1000 && iEnd < 1100) {
+					str = arr[3]
+				} else {
+					str = arr[4]
+				}
+				$("p").html(iEnd / 1000 + "秒" + "<br>" + str);
+				$("p").css("padding-bottom", "20px");
+				num = 0;
+				return false
+			})
+		})
+		</script>
+	</head>
+	<body onselectstart="return false ">
+		<h1><span>一秒钟</span>有多长</h1>
+		<h2>您能精确的按出一秒钟吗？</h2>
+		<p>
+			
+		</p>
+		<div class="yuan outer">
+			<div class="yuan inner">
+				按住
+			</div>
+		</div>
+	</body>
+</html>
