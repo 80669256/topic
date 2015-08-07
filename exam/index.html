@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>程序员入门考试</title>
+		<meta name="description" content="程序员初级考试笔试题，你有潜质成为一个程序猿（媛）吗？这里有最经典的测试题，赶快来测一测吧~" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	    <meta content="telephone=no" name="format-detection" />
+	    <link rel="apple-touch-icon-precomposed" href="http://zyadmin.xhd.cn/r/cms/beijing/default/m/images/touch-icon-iphone4.png">
+   		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://zyadmin.xhd.cn/r/cms/beijing/default/m/images/touch-icon-ipad.png">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" href="css/iconfont.css">
+		<script type="text/javascript" src="js/sea.js" ></script>
+		<script src="js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var sW = document.documentElement.clientWidth; 
+			if(sW>720)sW=720;
+			document.getElementsByTagName("html")[0].style.fontSize = sW/10+"px";
+		</script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="dbg"></div>
+			<div class="login">
+				<span class="close"><i class="iconfont">&#xe669;</i></span>
+				<p class="one"><span><i class="iconfont">&#xe66c;</i></span> <input class="lName" type="text" placeholder="请输入姓名..." value="" /></p>
+				<p><span><i class="iconfont">&#xe601;</i></span> <input class="lTel" type="tel" placeholder="请输入电话号码..." value="" /></p>
+				<button class="lBtn">提交</button>
+			</div>
+			 <div class="welcome">
+			 	<img src="images/1.fw.jpg" class="bg" >
+			 	<div class="upinfo">
+			 		<h3>2015年程序员入门考试</h3>
+			 		<h2>试卷袋</h2>
+			 		<p class="msg">
+			 			<strong> 英语：共<span></span>题 <br></strong>
+			 			<strong> 答题时间：<span></span>秒 </strong>
+			 		</p>
+			 		<p class="begin">
+			 			<button>开始答题</button>
+			 		</p>
+			 		<p class="secret">
+			 			启用前<span>绝密</span>
+			 		</p>
+			 		<p class="end">新航道英语</p>
+			 	</div>
+			 </div>
+			 <div class="question">
+			 	<div class="info">
+				姓名：<span class="msg" id="nameMsg"> </span>  电话:<span class="msg" id="telMsg"></span>  <span class="timer"></span>
+				
+			    </div>
+			 	<p class="question_title"> </p>
+			 	<ul class="clearfix">
+			 		<li><span>A: </span><span class="answers"></span></li>
+			 		<li><span>B: </span><span class="answers"></span></li>
+			 		<li><span>C: </span><span class="answers"></span></li>
+			 		<li><span>D: </span><span class="answers"></span></li>
+			 	</ul>
+			 	<ol class="clearfix" data-right="">
+			 		<li data-index="0">A</li>
+			 		<li data-index="1">B</li>
+			 		<li data-index="2">C</li>
+			 		<li data-index="3">D</li>
+			 	</ol>
+			 	<h5 class="btm">——版权所有：新航道英语——</h5>
+			 </div>
+			 <div class="finish">
+			 	<img class="timg" src="images/3.png">
+			 	<div class="content">
+			 		<p>你答对了<span class="rightAnster">3</span>道真题,最终成绩是<span class="endScore">84</span>分,送您一句话:<span class="comments"></span></p>
+			 	<h3 class="active">
+			 		<a href="/">重新答题</a></h3>
+			 	<h3><a href="http://www.xhd.cn/app/">访问官网</a></h3>
+			 	<h3 class="shareWx"><a href="javascript:;">分享到微信</a></h3>
+			 	</div>
+			 </div>
+			 <div class="weixin">
+			 	<img src="images/4.png" />
+			 </div>
+		</div>
+		<script type="text/javascript">
+			seajs.use('main',function(ex){
+				ex.main();
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+﻿@charset "utf-8";
+/*css reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,img {margin:0; padding:0;}
+table {border-collapse:collapse; border-spacing:0px;}
+fieldset,img {border:none;vertical-align:bottom;}
+adress,caption,cite,code,dfn,em,th,var {font-style:normal; font-weight:normal;}
+dl,ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
+q:before,q:after {content:"";}
+abbr,acronym {border:0;}
+input,button,select,textarea,a{ outline:none;} 
+html,body {font: 16px/1.7em microsoft yahei; color:#646464;}
+a{color:#4e83d0;text-decoration:none;}
+a:hover {text-decoration:none;}
+/**去除焦点边框*/
+*{     
+    -webkit-tap-highlight-color: transparent;  
+    -webkit-appearance: none;  
+} 
+/**字体*/
+ 
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+  font: 14px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+/*oo css*/
+.fl{float:left;}
+.fr{float:right;}
+.clearfix:after{content:""; display:block; clear:both;}
+.clearfix{zoom:1;}
+.hide{display:none;}
+.borderBox{ box-sizing:border-box;}
+
+/*page css*/
+body,html{ width: 100%; height: 100%;  background-size: 50%;  font-family: "微软雅黑" !important;background: #D7BC7F; }
+.bgdouble{ background: radial-gradient(#f0f0f0,#BCB3B0) !important;}
+.findshBg{background: radial-gradient(#5C5453,#9E9592) !important;}
+#wrap{ width: 100%; max-width: 720px; margin: 0 auto; position: relative;     }
+h5.btm{ position: fixed; width: 90%; bottom: 0.2rem; height: 0.7rem; font-size: 0.3rem;  text-align: center;}
+.question{ width: 90%; min-height: 100%; left: 5%; top: 0.5rem;   display: none; color: #313131; font-size: 0.4rem; position: absolute; } 
+.question .info{ background: #D8BB77; padding:0.3rem 0.5rem; font-size: 0.4rem;}
+.question .info .msg{ height: 0.7rem; display: inline-block; color:#000000;font-size: 0.45rem; border-bottom: 1px solid #313131;}
+.question .info .timer{ margin-left: 0.5rem; box-sizing: border-box; padding: 0.1rem; border-radius: 50%; font-size: 0.4rem; color: #F0F0F0; background:rgba(230,0,18,0.6);-webkit-animation:newsBtn 2s alternate infinite;}
+@-webkit-keyframes newsBtn
+{
+    0% { box-shadow: 0px 0px 0px 0px rgba(0,0,0,0),0px 0px 0px 1px rgba(230,0,18,0); }
+    10%{ box-shadow: 0px 0px 0px 1px rgba(0,0,0,0), 0px 0px 0px 2px rgba(230,0,18,0.1);}
+    20%{ box-shadow: 0px 0px 0px 2px rgba(0,0,0,0), 0px 0px 0px 4px rgba(230,0,18,0.2);}
+    40%{ box-shadow: 0px 0px 0px 0px rgba(0,0,0,0), 0px 0px 0px 1px rgba(230,0,18,0.1),0px 0px 0px 4px rgba(0,0,0,0), 0px 0px 0px 6px rgba(230,0,18,0.3);}
+    50%{ box-shadow: 0px 0px 0px 1px rgba(0,0,0,0), 0px 0px 0px 3px rgba(230,0,18,0.2),0px 0px 0px 5px rgba(0,0,0,0), 0px 0px 0px 8px rgba(230,0,18,0.4);}
+    60%{ box-shadow: 0px 0px 0px 2px rgba(0,0,0,0), 0px 0px 0px 5px rgba(230,0,18,0.3),0px 0px 0px 6px rgba(0,0,0,0), 0px 0px 0px 10px rgba(230,0,18,0.5);}
+    70%{ box-shadow: 0px 0px 0px 3px rgba(0,0,0,0), 0px 0px 0px 6px rgba(230,0,18,0.4),0px 0px 0px 7px rgba(0,0,0,0), 0px 0px 0px 11px rgba(230,0,18,0.4);}
+    80%{ box-shadow: 0px 0px 0px 4px rgba(0,0,0,0), 0px 0px 0px 7px rgba(230,0,18,0.3),0px 0px 0px 8px rgba(0,0,0,0), 0px 0px 0px 12px rgba(230,0,18,0.3);}
+    90%{ box-shadow: 0px 0px 0px 5px rgba(0,0,0,0), 0px 0px 0px 6px rgba(230,0,18,0.2),0px 0px 0px 9px rgba(0,0,0,0), 0px 0px 0px 13px rgba(230,0,18,0.2);}
+    100%{ box-shadow: 0px 0px 0px 7px rgba(0,0,0,0), 0px 0px 0px 7px rgba(230,0,18,0.1),0px 0px 0px 10px rgba(0,0,0,0), 0px 0px 0px 14px rgba(230,0,18,0);}
+}
+.question_title{ background: #99B053; padding:0.35rem 0.5rem; margin-top: 0.2rem;}
+.question ul{ margin-top: 0.2rem; background: #FAF9F9; padding: 0.3rem; 0.7rem}
+.question ul li{  text-align: left; line-height: 0.75rem;  }
+.question ol{background: #FAF9F9; padding: 0 0.7rem 1rem 0.7rem;}
+.question ol li{ float: left; width: 46%; margin: 2% 4%;   height: 70px; text-align: center; line-height: 70px; font-size: 28px; background: #D3D3D3; color: #676767;} 
+.question ol li:nth-child(2n+1){ margin: 2% 0;}
+.question ol li.right{ color: #FFFFFF; background: #99B053; }
+.question ol li.error{color: #FFFFFF; background: #FF0000;}
+ 
+.welcome{width: 100%;  }
+.welcome img{ max-width: 100%;} 
+.welcome img.bg{z-index: -1;}
+.upinfo{ z-index: 1; position: absolute; left: 0; top: 0;   width:100%; height: 100%;  color: #D8BB77;}
+.upinfo h3{  font-size: 0.45rem; text-align: center; margin-top: 1rem;  }
+.upinfo h2{ font-size: 1.2rem; text-align: center; margin: 0.3rem 0 0.3rem 0; }
+.upinfo .msg{ width: 47%; line-height: 1rem; font-size: .55rem; padding: 0.1rem 0; text-align: center; margin: 0 auto;  height: 2rem; border:0.07rem solid #D8BB77; }
+.upinfo .msg strong{ font-weight: normal;}
+.upinfo .begin{ width: 45%;  height: 1.7rem; padding: 0.1rem 0; text-align: center; line-height: 1.5rem; margin: 0 auto; background: #D7BC7F; box-shadow:0 0 0.2rem #D7BC7F; margin-top: 0.4rem;box-sizing: border-box;}
+.upinfo .begin button{ background: #D7BC7F;   border: none; color: #151536; width: 100%;height: 1.5rem;font-size: 0.7rem;  }
+.upinfo .begin button:active{ color: #000000;}
+.upinfo .secret { margin-top: 2rem; color: #313131; padding-left: 1rem; font-size: 0.35rem;}
+.upinfo .secret span{ padding: 0.1rem 0.3rem; font-size: 0.45rem; margin-left: 0.2rem; text-align: center; border: 0.07rem solid #313131;}
+.upinfo .end{   text-align: center;color: #313131; bottom: 0.3rem; position: absolute;display: block; width: 100%;  }
+
+
+.finish{width: 95%;margin: 0 auto; position: relative; display: none;}
+.finish .timg{max-width: 100%; margin-top: 2rem;z-index: 2; display:block; position: absolute; }
+.finish .content{  box-shadow: 0 0 1rem #f0f0f0; padding-bottom: 0.5rem; width: 84%;z-index: 1; background: #F0F0F0; position: absolute; left: 8%; top: 3.1rem;}
+.finish .content p{ padding: 1rem; padding-bottom: 0.5rem; color: #28282C; font-size: .5rem}
+.finish .content p span{ color: #F26522;}
+.finish .content h3{ width: 70%; margin: 0 auto; margin-bottom: .3rem; font-size: .55rem; text-align: center;   border-radius: 0.15rem; height: 1.4rem; line-height: 1.4rem; background: #BFBFBF;  }
+.finish .content h3 a{  color: #F0F0F0; display: block; }
+.finish .content h3.active{ background: #9BB255;}
+
+.dbg{ background: #000000; display: none;  opacity: 0.7; width: 100%; height: 100%; left: 0; top: 0; position: fixed; z-index: 100;}
+.login{ width: 90%; left: 5%; display: none; top: 3.5rem;  position: absolute; background: #FAEDC8; box-shadow: 0 0 1rem #D8BE81;     height: 6.5rem;   border-radius: 5px; z-index: 101; }
+.login p.one{ padding-top: 1.2rem;} 
+.login p{ padding: 0.3rem 1rem;}
+.login p input{ border: none; text-indent: 1em; padding: 0.2rem 0; width:6rem ; box-sizing: border-box;} 
+.login button{ width: 70%;   margin: 0.15rem 15% 0 15%; border: none; background: #9BB255; color: #F0F0F0;   height: 1rem; box-sizing: border-box;}
+.login i{ color:#F26522;}
+.login span.close{ position: absolute;  right: 1px; top: 1px;}
+.login span.close i{font-size: 0.8rem}
+
+.weixin{ z-index: 3; width: 100px; height: 80px; position: absolute; right: 0; top: 0; display: none;}
+.weixin img{ width: 100px;} 
+.shareWx{ display: none;}
